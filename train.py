@@ -62,7 +62,7 @@ print " Done! "
 
 
 #将被选中特征列表写入文件
-feature.write_cascade_to_file(selectedFeatures)
+feature.write_selectedfeatures_to_file(selectedFeatures)
 
 
 
