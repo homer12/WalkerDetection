@@ -50,7 +50,9 @@ print " Done! "
 
 #训练样例，返回被选中的特征列表
 print " Begin Training "
-cas = feature.cascade_train(rect_list, 0.4, 0.9, 0.05)
+#def cascade_train( featureList, maxFalsePositivePerLayer, minDetectionRatePerLayer , targetFalsePositive)
+#cas = feature.cascade_train(rect_list, 0.4, 0.9, 0.05)
+cas = feature.cascade_train(rect_list, 1.0, 0.05, 1.0)
 print " Done! "
 
 
