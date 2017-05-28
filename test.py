@@ -54,9 +54,7 @@ print 'Done'
 print 'Reading nonface pictures'
 testingImgFolder = 'image/testing_nonfaces'
 nonFaceImgList = os.listdir(testingImgFolder)
-for file in nonFaceImgList:
-    if( file[-3:] != 'bmp' ):   continue
-    
+for file in nonFaceImgList:    
     fullImgPath = testingImgFolder + '/' + file
     img = cv2.imread(fullImgPath)
     gray = cv2.cvtColor(img , cv2.COLOR_BGR2GRAY)
