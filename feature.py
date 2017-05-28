@@ -497,7 +497,7 @@ def read_selectedfeatures_to_file( filename ):
 def cascade_train( featureList, maxFalsePositivePerLayer, minDetectionRatePerLayer , targetFalsePositive):
     #读入照片
     os.system("echo 'Reading Pictures' >> Results.txt")
-    debug()
+    
     
     #初始化正例集合
     positiveImgList = []
@@ -570,6 +570,7 @@ def cascade_train( featureList, maxFalsePositivePerLayer, minDetectionRatePerLay
             #用P和N训练一个含有T个分类器的Layer
             print 'Use P and N to train'
             layer.seFeatureList = train(trainingImgList, trainingLabelList, featureList, T)
+            
             layer.numberOfFeatures = len(layer.seFeatureList)
             layer.thres = 0.0
             for f in layer.seFeatureList:

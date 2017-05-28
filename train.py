@@ -12,7 +12,7 @@ trainingLabelList = []      #训练中要用到的label列表
 
 
 #先处理脸部训练图片
-'''
+
 print " Reading Face Pictures"
 faceImgList = os.listdir('image/training_faces')
 for file in faceImgList:
@@ -24,11 +24,10 @@ for file in faceImgList:
     trainingImgList.append(integral_img)
     trainingLabelList.append(1)
 print " Done! "
-'''
 
 
 #再处理非脸部训练图片
-'''
+
 print " Reading Non Face Pictures "
 nonFaceImgList = os.listdir('image/training_nonfaces')
 for file in nonFaceImgList:
@@ -40,7 +39,9 @@ for file in nonFaceImgList:
     trainingImgList.append(integral_img)
     trainingLabelList.append(0)
 print " Done! "
-'''
+
+
+
 
 #从文件rect.txt中读取rect_list
 print " Reading rect_list "
@@ -52,13 +53,16 @@ print " Done! "
 print " Begin Training "
 #def cascade_train( featureList, maxFalsePositivePerLayer, minDetectionRatePerLayer , targetFalsePositive)
 #cas = feature.cascade_train(rect_list, 0.4, 0.9, 0.05)
-cas = feature.cascade_train(rect_list, 0.9, 0.05, 0.9)
+#cas = feature.cascade_train(rect_list, 0.9, 0.05, 0.9)
+
+#def train( imageList, labelList, featureList , T)
+selectedFeatures = feature.train(trainingImgList , trainingLabelList , rect_list , 3 )
 print " Done! "
 
 
 
 #将被选中特征列表写入文件
-feature.write_cascade_to_file(cas)
+feature.write_cascade_to_file(selectedFeatures)
 
 
 
