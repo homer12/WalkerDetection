@@ -52,7 +52,7 @@ print " Done! "
 print " Begin Training "
 #def cascade_train( featureList, maxFalsePositivePerLayer, minDetectionRatePerLayer , targetFalsePositive)
 #cas = feature.cascade_train(rect_list, 0.4, 0.9, 0.05)
-cas = feature.cascade_train(rect_list, 1.0, 0.05, 1.0)
+cas = feature.cascade_train(rect_list, 0.9, 0.05, 0.9)
 print " Done! "
 
 
