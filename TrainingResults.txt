@@ -1,0 +1,73 @@
+2017/04/27 14:04
+训练图片 = Pos51 + Neg51
+分类器数量 = 10
+训练结果
+Sum = 7087
+Positive = 2706.0
+Negative = 4381.0
+TruePositive = 1446.0
+TrueNegative = 4027.0
+FalsePositive = 354.0
+FalseNegative = 1260.0
+Correct Detection Rate = 0.534368070953
+False Positive Rate = 0.0808034695275
+
+
+
+2017/04/27 14:21
+训练图片 = Pos51 + Neg51
+分类器数量 = 20
+训练结果
+Sum = 7087
+Positive = 2706.0
+Negative = 4381.0
+TruePositive = 1521.0
+TrueNegative = 4040.0
+FalsePositive = 341.0
+FalseNegative = 1185.0
+Correct Detection Rate = 0.562084257206
+False Positive Rate = 0.0778361104771
+
+
+
+
+
+
+2017/04/27 14:39
+训练图片 = Pos51 + Neg51
+分类器数量 = 30
+训练结果
+Sum = 7087
+Positive = 2706.0
+Negative = 4381.0
+TruePositive = 1499.0
+TrueNegative = 4095.0
+FalsePositive = 286.0
+FalseNegative = 1207.0
+Correct Detection Rate = 0.553954175905
+False Positive Rate = 0.0652818991098
+
+
+
+
+
+
+
+2017/04/28 09:22
+训练图片 = Pos201 + Neg431
+分类器数量 = 30
+训练结果
+Sum = 7087
+Positive = 2706.0
+Negative = 4381.0
+TruePositive = 1194.0
+TrueNegative = 4331.0
+FalsePositive = 50.0
+FalseNegative = 1512.0
+Correct Detection Rate = 0.441241685144
+False Positive Rate = 0.0114129194248
+
+
+
+
+
